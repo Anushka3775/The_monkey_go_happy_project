@@ -62,7 +62,7 @@ function draw() {
    else if(gameState===END){
     FoodGroup.setVelocityEach(0);
     obstaclesGroup.setVelocityEach(0);
-    monkey.velocityY=0; 
+    monkey.velocityY=0;
   }
     drawSprites();
 }
@@ -80,10 +80,10 @@ function banana1 (){
 }
 }
 function obs(){
-  if(frameCount % 300 === 0){
+  if(frameCount % 400 === 0){
    obstacle=createSprite(80,335,20,20);
    obstacle.velocityX=-2;
-   obstacle.x=Math.round(random(400,550));
+   obstacle.x=400;
    obstacle.lifetime=200;
    obstacle.addImage("obstacles",obstacleImage);
    obstacle.scale=0.3;
